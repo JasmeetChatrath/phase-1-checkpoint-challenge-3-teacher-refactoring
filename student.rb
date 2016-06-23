@@ -1,5 +1,7 @@
+# require_relative 'teacher'
+
 class Student
-  attr_reader :age, :phase
+  # attr_reader :age, :phase
   attr_accessor :name
 
   def initialize(options = {})
@@ -11,8 +13,9 @@ class Student
   def offer_high_five
     "High five!"
   end
-
+#move offer_high_five to school.rb
   def set_phase(num)
+
     response = ""
     if num == @phase
       response += "I'm doing phase #{@phase} again because "
